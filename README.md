@@ -76,3 +76,7 @@ $ cd car_website_backend;
 
 # Demo
 REPLACE: update with demo gif of the entire run of the project
+
+Let me know if you see any possible improvements or errors in the application. You can reach out to me at: <br>
+[LinkedIn](https://linkedin.com/in/kratipaw) <br>
+[Twitter](https://twitter.com/krati_paw)
