@@ -1,9 +1,21 @@
 # Boogle Maps
 
-This is a Mock that simulates a Maps WebService where, given a latitude
+This is a Mock Rest API service that simulates a Maps WebService where, given a latitude
 longitude, will return a random address.
 
-## Instructions
+## Details
+
+Classes and package
+
+- __Address.java__: Declares a class that consists of address, city, state, zip.
+
+- __MapsController__: Its a controller class for Boogle maps rest api.
+
+- __MockAddressRepository.java__: Implements a mock repository for generating a random address. It basically gets a random address from the pre-defined list.
+
+- __BoogleMapsApplication.java__: It is the main spring boot class that runs the appplication.
+
+## How to run?
 
 Via shell it can be started using
 
