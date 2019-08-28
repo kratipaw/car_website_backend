@@ -1,7 +1,6 @@
 # Vehicles API
 
-A REST API to maintain vehicle data and to provide a complete
-view of vehicle details including price and address.
+A Spring Data Rest micro-service to maintain vehicle data and to provide a complete view of vehicle details including price and address.
 
 ## Features
 
@@ -12,6 +11,12 @@ view of vehicle details including price and address.
 - HTTP WebClient
 - MVC Test
 - Automatic model mapping
+
+## Details
+
+Classes and packages 
+
+- 
 
 ## Instructions
 

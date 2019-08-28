@@ -1,20 +1,37 @@
 # Pricing Service
 
-The Pricing Service is a REST WebService that simulates a backend that
-would store and retrieve the price of a vehicle given a vehicle id as
-input. In this project, you will convert it to a microservice.
+The Pricing Service is a micro-service that simulates a backend that would store and retrieve the price of a vehicle given a vehicle id as input. 
 
 
-## Features
+## Details
 
-- REST WebService integrated with Spring Boot
+Packages and classes
 
-## Instructions
+- __RepositoryConfig.java__: Its a configuration file that reads JSON data from a file and populates the repository store.
 
-#### TODOs
+- __Price.java__: It is the entity file that defines currency, amount and vehicle id.
 
-- Convert the Pricing Service to be a microservice.
-- Add an additional test to check whether the application appropriately generates a price for a given vehicle ID
+- __PriceRepository.java__: Its the repository interface that extends CRUDRepository to implement basic CRUD functions on Price repository. The rest resource to expose is '/price'
+
+- __PricingServiceApplciation.java__: It is the main class the starts our pricing-service micro-service that is registered to our Eureka server for discovery.
+
+- __application.properties__: It defines the H2 database properties as well as the Eureka client properties as mentioned below:
+
+```properties
+spring.application.name=pricing-service
+server.port=8082
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+eureka.client.service-url.default-zone=http://localhost:8761/eureka/
+eureka.instance.prefer-ip-address=false
+
+#To map to custom URL
+spring.data.rest.basePath=/services
+```
+
+The last line the properties defines custom URL for pricing-service.
+
+Once the application is running, you can check on : http://localhost:8082/services/price 
+
 
 #### Run the code
 

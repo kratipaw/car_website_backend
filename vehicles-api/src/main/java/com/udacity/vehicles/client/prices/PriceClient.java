@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
+
+
 /**
  * Implements a class to interface with the Pricing Client for price data.
  */
@@ -32,15 +34,16 @@ public class PriceClient {
      */
     public String getPrice(Long vehicleId) {
         try {
+            /*Note : Modified the pricing service URI path to point to Spring Data Rest*/
             Price price = client
                     .get()
                     .uri(uriBuilder -> uriBuilder
-                            .path("services/price/")
-                            .queryParam("vehicleId", vehicleId)
+                            .path("/prices/" + vehicleId)
+                            //.queryParam("vehicleId", vehicleId)
                             .build()
                     )
                     .retrieve().bodyToMono(Price.class).block();
-
+            
             return String.format("%s %s", price.getCurrency(), price.getPrice());
 
         } catch (Exception e) {
