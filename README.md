@@ -40,7 +40,7 @@ With the maps mock set up let's move on to the other important components of the
 
 ### Eureka Server
 
-"<to be updated>"
+to be updated
 
 ### Pricing Service
 To run the service we execute:
@@ -55,4 +55,4 @@ Again, this project too can be imported in as a Maven project.
 
 ### Vehicles API
 
-"<to be updated>"
+to be updated
