@@ -1,5 +1,4 @@
 # Backend for a Car Sales company
-The code for this project is present [here](https://github.com/kratipaw/car_website_backend).
 
 Develop REST and GraphQL APIs, also focuses on how to secure, consume, document, and test those APIs and web services. The API documentation is developed using Swagger.
 
