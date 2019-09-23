@@ -33,7 +33,7 @@ The last line the properties defines custom URL for pricing-service.
 Once the application is running, you can check on : http://localhost:8082/services/price 
 
 
-#### Run the code
+#### Run the application
 
 To run this service you execute:
 
