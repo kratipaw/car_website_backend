@@ -42,11 +42,9 @@ With the maps mock set up let's move on to the other important components of the
 
 Below are the commands to build and run this project.
 
-```
+```bash
 $ mvn clean package
-```
 
-```
 $ java -jar target/eurekaServer-0.0.1-SNAPSHOT.jar
 ```
 
@@ -65,4 +63,12 @@ Again, this project too can be imported in as a Maven project.
 
 ### Vehicles API
 
-"<to be updated>"
+To properly run this application we need to first start the `boggle-maps` API and the `pricing-service` API. 
+
+```bash
+$ mvn clean package
+
+$ java -jar target/vehicles-api-0.0.1-SNAPSHOT.jar
+```
+
+Alternatively, we can import it our IDE and run the main class `VehiclesApiApplicaion`.
