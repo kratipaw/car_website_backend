@@ -15,7 +15,7 @@ If you want to read about these modules in detail, click on the links below are 
 
 3. __[pricing-service](https://kratipaw.github.io/car_website_backend/pricing-service/)__: Its a micro-service registered to the Eureka server that simulates a backend that would store and retrieve the price of a vehicle given a vehicle id as input.
 
-4. __[vehicles-api](https://github.com/kratipaw.github.io/car_website_backend/vehicles-api/)__: Its a micro-service registered to the Eureka server. It maintains the vehicle data and provides a complete view of vehicle details including price and address. The API documentation is done for this service.
+4. __[vehicles-api](https://kratipaw.github.io/car_website_backend/vehicles-api/)__: Its a micro-service registered to the Eureka server. It maintains the vehicle data and provides a complete view of vehicle details including price and address. The API documentation is done for this service.
 
  
 ## Run above modules simultaneously:
