@@ -15,9 +15,9 @@ logging.level.com.netflix.eureka=ON
 logging.level.com.netflix.discovery=ON
 ````
 
-## How to run?
+## Run the application
 
-Via shell it can be started using
+Below are the commands to build and run this project.
 
 ```
 $ mvn clean package
